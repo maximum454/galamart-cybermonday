@@ -2,6 +2,7 @@
 	background-image: url("../img/selections-bg.png");
 	background-position: center;
 	background-size: 100%;
+	padding-bottom: 69px;
 	&__header{
 		max-width: 1086px;
 		padding: 0 20px;
@@ -62,6 +63,7 @@
 		text-align: center;
 		position: relative;
 		display: block;
+		transition: all .3s ease;
 		&:before{
 			display: block;
 			content: "";
@@ -81,6 +83,17 @@
 			z-index: 0;
 			pointer-events: none;
 		}
+		&:hover{
+			transition: all .3s ease;
+			&:after{
+				opacity: 0.8;
+				transition: all .3s ease;
+			}
+			.cybermonday2023-selections__figure{
+				transition: all .3s ease;
+				transform: scale(1.1);
+			}
+		}
 	}
 	&__figure{
 		margin: 0 auto;
@@ -95,6 +108,7 @@
 		width: 100%;
 		height: 100%;
 		border: 0;
+		transition: all .3s ease;
 		&:before{
 			content: '';
 			top: 0;
@@ -132,7 +146,7 @@
 		letter-spacing: 0.105em;
 		text-transform: uppercase;
 		color: #00F0FF;
-		padding: 20px 20px 0;
+		padding: 20px 0 0;
 		position: absolute;
 		top: 100%;
 		left: 0;
