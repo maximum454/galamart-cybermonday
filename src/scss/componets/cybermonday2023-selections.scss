@@ -5,7 +5,7 @@
 	&__header{
 		max-width: 1086px;
 		padding: 0 20px;
-		margin: 0 auto 40px;
+		margin: 0 auto 73px;
 		p{
 			font-weight: 400;
 			font-size: 24px;
@@ -16,7 +16,7 @@
 			background-clip: text;
 			text-fill-color: transparent;
 			text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-			margin: 0 0 16px;
+			margin: 0 0 13px;
 		}
 		a{
 			font-weight: 400;
@@ -47,20 +47,27 @@
 		}
 	}
 	&__body{
-		max-width: 1150px;
+		max-width: 1086px;
 		padding: 0 20px 40px;
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 40px;
+		justify-content: space-between;
+		gap: 105px 60px;
 	}
 	&__item{
-		flex: 1 0 calc(25% - 40px);
-		max-width: calc(25% - 40px);
+		flex: 1 0 calc(25% - 60px);
+		max-width: calc(25% - 60px);
 		text-decoration: none;
 		text-align: center;
 		position: relative;
+		display: block;
 		&:before{
+			display: block;
+			content: "";
+			padding-top: 100%;
+		}
+		&:after{
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -77,12 +84,17 @@
 	}
 	&__figure{
 		margin: 0 auto;
-		position: relative;
-		width: 195px;
-		height: 195px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding: 20px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
 		&:before{
 			content: '';
 			top: 0;
@@ -91,8 +103,8 @@
 			border: 3px solid #00F0FF;
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 			border-radius: 20px;
-			width: 100%;
-			height: 100%;
+			width: calc(100% - 6px);
+			height: calc(100% - 6px);
 		}
 		&:after{
 			content: '';
@@ -102,8 +114,14 @@
 			border: 3px solid #875CFF;
 			filter: blur(3.5px);
 			border-radius: 20px;
-			width: 100%;
-			height: 100%;
+			width: calc(100% - 6px);
+			height: calc(100% - 6px);
+		}
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+			object-fit: contain;
 		}
 	}
 	&__name{
@@ -114,18 +132,52 @@
 		letter-spacing: 0.105em;
 		text-transform: uppercase;
 		color: #00F0FF;
-		padding: 26px 20px 0;
+		padding: 20px 20px 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
 	}
 	@include r(1023){
+		&__body{
+			gap: 85px 40px;
+		}
 		&__item{
-			flex: 1 0 calc(33.333% - 40px);
-			max-width: calc(33.333% - 40px);
+			flex: 1 0 calc(25% - 40px);
+			max-width: calc(25% - 40px);
+		}
+		&__figure{
+			padding: 30px;
 		}
 	}
 	@include r(767){
+		&__header{
+			margin-bottom: 96px;
+			p{
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 150%;
+				margin: 0 0 24px;
+			}
+			a{
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 150%;
+			}
+		}
+		&__body{
+			gap: 69px 20px;
+		}
 		&__item{
-			flex: 1 0 calc(50% - 40px);
-			max-width: calc(50% - 40px);
+			flex: 1 0 calc(50% - 10px);
+			max-width: calc(50% - 10px);
+		}
+		&__figure{
+			padding: 30px;
+		}
+		&__name{
+			font-size: 14px;
+			padding: 17px 20px 0;
 		}
 	}
 }

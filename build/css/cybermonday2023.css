@@ -29,6 +29,14 @@
 
 @font-face {
   font-family: "Montserrat";
+  src: local("Montserrat-Light"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
   src: local("Montserrat-Light"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
@@ -1740,6 +1748,70 @@ body {
   padding-bottom: 0;
 }
 
+.remodal {
+  text-align: left;
+  position: relative;
+  background: rgba(7, 7, 15, 0.7);
+  -webkit-box-shadow: 0 0 23px #4200FF, 0 4px 4px rgba(0, 0, 0, 0.25), inset -5px -5px 81px 11px rgba(255, 0, 245, 0.25), inset 5px 5px 63px 7px rgba(0, 71, 255, 0.5);
+          box-shadow: 0 0 23px #4200FF, 0 4px 4px rgba(0, 0, 0, 0.25), inset -5px -5px 81px 11px rgba(255, 0, 245, 0.25), inset 5px 5px 63px 7px rgba(0, 71, 255, 0.5);
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  max-width: 834px;
+  padding: 101px 79px 55px;
+}
+
+.remodal:before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 3px solid #00F0FF;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+  border-radius: 30px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  pointer-events: none;
+}
+
+.remodal:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 3px solid #875CFF;
+  -webkit-filter: blur(3.5px);
+          filter: blur(3.5px);
+  border-radius: 30px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  pointer-events: none;
+}
+
+.remodal p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  color: #63D0FF;
+}
+
+.remodal .remodal-close {
+  top: 21px;
+  right: 19px;
+  left: auto;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/remodal-close.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.remodal .remodal-close:before {
+  display: none;
+}
+
 .newyear2023-content {
   margin: 0 0 60px;
   padding: 14px 0;
@@ -1818,7 +1890,7 @@ body {
 .cybermonday2023-selections__header {
   max-width: 1086px;
   padding: 0 20px;
-  margin: 0 auto 40px;
+  margin: 0 auto 73px;
 }
 
 .cybermonday2023-selections__header p {
@@ -1832,7 +1904,7 @@ body {
   background-clip: text;
   text-fill-color: transparent;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 0 16px;
+  margin: 0 0 13px;
 }
 
 .cybermonday2023-selections__header a {
@@ -1871,7 +1943,7 @@ body {
 }
 
 .cybermonday2023-selections__body {
-  max-width: 1150px;
+  max-width: 1086px;
   padding: 0 20px 40px;
   margin: 0 auto;
   display: -webkit-box;
@@ -1879,20 +1951,30 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 105px 60px;
 }
 
 .cybermonday2023-selections__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(25% - 40px);
-          flex: 1 0 calc(25% - 40px);
-  max-width: calc(25% - 40px);
+      -ms-flex: 1 0 calc(25% - 60px);
+          flex: 1 0 calc(25% - 60px);
+  max-width: calc(25% - 60px);
   text-decoration: none;
   text-align: center;
   position: relative;
+  display: block;
 }
 
 .cybermonday2023-selections__item:before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+}
+
+.cybermonday2023-selections__item:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1913,9 +1995,6 @@ body {
 
 .cybermonday2023-selections__figure {
   margin: 0 auto;
-  position: relative;
-  width: 195px;
-  height: 195px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1925,6 +2004,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .cybermonday2023-selections__figure:before {
@@ -1936,8 +2023,8 @@ body {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
   border-radius: 20px;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
 }
 
 .cybermonday2023-selections__figure:after {
@@ -1949,8 +2036,16 @@ body {
   -webkit-filter: blur(3.5px);
           filter: blur(3.5px);
   border-radius: 20px;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+}
+
+.cybermonday2023-selections__figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .cybermonday2023-selections__name {
@@ -1961,7 +2056,11 @@ body {
   letter-spacing: 0.105em;
   text-transform: uppercase;
   color: #00F0FF;
-  padding: 26px 20px 0;
+  padding: 20px 20px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1986,11 +2085,19 @@ body {
     color: #FFF9AF;
   }
 
+  .cybermonday2023-selections__body {
+    gap: 85px 40px;
+  }
+
   .cybermonday2023-selections__item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 calc(33.333% - 40px);
-            flex: 1 0 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
+        -ms-flex: 1 0 calc(25% - 40px);
+            flex: 1 0 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+  }
+
+  .cybermonday2023-selections__figure {
+    padding: 30px;
   }
 }
 
@@ -2001,6 +2108,34 @@ body {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .remodal-wrapper {
+    padding: 71px 0 0;
+  }
+
+  .remodal {
+    border-radius: 30px;
+    padding: 85px 23px 40px;
+  }
+
+  .remodal:before {
+    border-radius: 10px;
+  }
+
+  .remodal:after {
+    border-radius: 10px;
+  }
+
+  .remodal p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 22px;
+  }
+
+  .remodal .remodal-close {
+    top: 13px;
+    right: 13px;
   }
 
   .newyear2023-content {
@@ -2043,10 +2178,40 @@ body {
     line-height: 18px;
   }
 
+  .cybermonday2023-selections__header {
+    margin-bottom: 96px;
+  }
+
+  .cybermonday2023-selections__header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 0 24px;
+  }
+
+  .cybermonday2023-selections__header a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .cybermonday2023-selections__body {
+    gap: 69px 20px;
+  }
+
   .cybermonday2023-selections__item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 calc(50% - 40px);
-            flex: 1 0 calc(50% - 40px);
-    max-width: calc(50% - 40px);
+        -ms-flex: 1 0 calc(50% - 10px);
+            flex: 1 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
+  .cybermonday2023-selections__figure {
+    padding: 30px;
+  }
+
+  .cybermonday2023-selections__name {
+    font-size: 14px;
+    padding: 17px 20px 0;
   }
 }
