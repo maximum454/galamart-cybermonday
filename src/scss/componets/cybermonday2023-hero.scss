@@ -14,7 +14,11 @@
 		img{
 			max-width: 100%;
 			height: auto;
-			display: block;
+		}
+	}
+	@include r(767){
+		&__body{
+			padding-top: 0;
 		}
 	}
 }

@@ -1879,7 +1879,6 @@ body {
 .cybermonday2023-hero__cyber img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .cybermonday2023-dif-arrow {
@@ -1952,14 +1951,18 @@ body {
 }
 
 .cybermonday2023-selections {
-  background-image: url("../img/selections-shadow.png"), url("../img/selections-bg.png");
+  background-image: url("../img/selections-bg.png");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
   padding-bottom: 69px;
+  position: relative;
+  -webkit-box-shadow: inset 0px 76px 156px 90px rgb(3, 3, 6);
+  box-shadow: inset 0px 76px 156px 90px rgb(3, 3, 6);
 }
 
 .cybermonday2023-selections__header {
+  position: relative;
   max-width: 1086px;
   padding: 0 20px;
   margin: 0 auto 73px;
@@ -2027,6 +2030,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 105px 60px;
+  position: relative;
 }
 
 .cybermonday2023-selections__item {
@@ -2241,6 +2245,15 @@ body {
     display: none;
   }
 
+  .cybermonday2023-hero__body {
+    padding-top: 0;
+  }
+
+  .cybermonday2023-dif-arrow {
+    margin-top: -95px;
+    margin-bottom: 16px;
+  }
+
   .cybermonday2023-dif-arrow__dif {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 116px;
@@ -2254,8 +2267,15 @@ body {
   }
 
   .cybermonday2023-dif-arrow__arrow {
-    width: 105px;
-    height: 135px;
+    width: 120px;
+    height: 145px;
+  }
+
+  .cybermonday2023-selections {
+    background-position: center bottom;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 200px 156px 123px rgb(3, 3, 6);
+    box-shadow: inset 0px 200px 156px 123px rgb(3, 3, 6);
   }
 
   .cybermonday2023-selections__header {
@@ -2292,6 +2312,6 @@ body {
 
   .cybermonday2023-selections__name {
     font-size: 14px;
-    padding: 17px 20px 0;
+    padding: 17px 0 0;
   }
 }
