@@ -1812,6 +1812,45 @@ body {
   display: none;
 }
 
+.cybermonday2023-header__body {
+  max-width: 1086px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cybermonday2023-header__logo {
+  text-decoration: none;
+}
+
+.cybermonday2023-header__logo img {
+  max-width: 100%;
+}
+
+.cybermonday2023-header__basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.cybermonday2023-header__basket span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2F45F4;
+}
+
 .newyear2023-content {
   margin: 0 0 60px;
   padding: 14px 0;
@@ -2233,6 +2272,30 @@ body {
   .remodal .remodal-close {
     top: 13px;
     right: 13px;
+  }
+
+  .cybermonday2023-header__basket {
+    display: block;
+  }
+
+  .cybermonday2023-header__basket span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 18px;
+    height: 18px;
+    background: #00F0FF;
+    border-radius: 50%;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .cybermonday2023-header__currency {
+    display: none;
   }
 
   .newyear2023-content {

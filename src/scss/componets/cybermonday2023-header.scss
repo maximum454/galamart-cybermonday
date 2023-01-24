@@ -1,0 +1,52 @@
+.cybermonday2023-header{
+	&__body{
+		max-width: 1086px;
+		margin: 0 auto;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo{
+		text-decoration: none;
+		img{
+			max-width: 100%;
+		}
+	}
+	&__basket{
+		display: flex;
+		gap: 9px;
+		align-items: center;
+		text-decoration: none;
+		position: relative;
+		span{
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: #2F45F4;
+		}
+	}
+	@include r(767){
+		&__basket{
+			display: block;
+
+			span{
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-width: 18px;
+				height: 18px;
+				background: #00F0FF;
+				border-radius: 50%;
+				overflow: hidden;
+				font-weight: 400;
+				font-size: 9px;
+				line-height: 18px;
+				text-align: center;
+				color: #000000;
+			}
+		}
+		&__currency{
+			display: none;
+		}
+	}
+}
