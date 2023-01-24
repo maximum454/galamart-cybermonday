@@ -1,0 +1,59 @@
+.cybermonday2023-dif-arrow{
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 45px;
+	gap: 40px;
+	&__dif{
+		flex: 1 1 396px;
+		max-width: 396px;
+		background: linear-gradient(90.02deg, #FA06FF 1.64%, #03D0FF 100%);
+		border-radius: 10px;
+		height: 3px;
+		margin: 0 9px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: calc(100% + 18px);
+			transform: translate(-50%, -50%);
+			height: 16px;
+			background: linear-gradient(90.02deg, #03D0FF 1.64%, #FA06FF 100%);
+			opacity: 0.4;
+			filter: blur(7.5px);
+			border-radius: 10px;
+		}
+		&:last-of-type{
+			transform: rotate(-180deg);
+			&:before{
+				background: linear-gradient(90.02deg,#FA06FF  1.64%, #03D0FF 100%);
+			}
+		}
+	}
+	&__arrow{
+		flex-shrink: 0;
+		background-image: url("../img/cybermonday2023-dif-arrow.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 121px;
+		height: 150px;
+	}
+	@include r(767){
+		&__dif{
+			flex: 1 1 116px;
+			max-width: 116px;
+			margin: 0 3px;
+			&:before{
+				width: calc(100% + 6px);
+			}
+		}
+		&__arrow{
+			width: 105px;
+			height: 135px;
+		}
+	}
+}

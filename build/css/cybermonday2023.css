@@ -1881,6 +1881,74 @@ body {
   vertical-align: middle;
 }
 
+.cybermonday2023-dif-arrow {
+  overflow: hidden;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+  gap: 40px;
+}
+
+.cybermonday2023-dif-arrow__dif {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 396px;
+          flex: 1 1 396px;
+  max-width: 396px;
+  background: -o-linear-gradient(359.98deg, #FA06FF 1.64%, #03D0FF 100%);
+  background: linear-gradient(90.02deg, #FA06FF 1.64%, #03D0FF 100%);
+  border-radius: 10px;
+  height: 3px;
+  margin: 0 9px;
+  position: relative;
+}
+
+.cybermonday2023-dif-arrow__dif:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 18px);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 16px;
+  background: -o-linear-gradient(359.98deg, #03D0FF 1.64%, #FA06FF 100%);
+  background: linear-gradient(90.02deg, #03D0FF 1.64%, #FA06FF 100%);
+  opacity: 0.4;
+  -webkit-filter: blur(7.5px);
+          filter: blur(7.5px);
+  border-radius: 10px;
+}
+
+.cybermonday2023-dif-arrow__dif:last-of-type {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.cybermonday2023-dif-arrow__dif:last-of-type:before {
+  background: -o-linear-gradient(359.98deg, #FA06FF 1.64%, #03D0FF 100%);
+  background: linear-gradient(90.02deg, #FA06FF 1.64%, #03D0FF 100%);
+}
+
+.cybermonday2023-dif-arrow__arrow {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../img/cybermonday2023-dif-arrow.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 121px;
+  height: 150px;
+}
+
 .cybermonday2023-selections {
   background-image: url("../img/selections-bg.png");
   background-position: center;
@@ -2176,6 +2244,23 @@ body {
   .newyear2023-content__count .text {
     font-size: 15px;
     line-height: 18px;
+  }
+
+  .cybermonday2023-dif-arrow__dif {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 116px;
+            flex: 1 1 116px;
+    max-width: 116px;
+    margin: 0 3px;
+  }
+
+  .cybermonday2023-dif-arrow__dif:before {
+    width: calc(100% + 6px);
+  }
+
+  .cybermonday2023-dif-arrow__arrow {
+    width: 105px;
+    height: 135px;
   }
 
   .cybermonday2023-selections__header {
