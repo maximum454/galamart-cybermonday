@@ -1,4 +1,9 @@
 .cybermonday2023-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
 	&__body{
 		max-width: 1086px;
 		margin: 0 auto;

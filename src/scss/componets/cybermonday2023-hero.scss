@@ -1,3 +1,20 @@
-.newyear2023-hero{
-
+.cybermonday2023-hero{
+	background-image:  url("../img/hero-shadow.png"), url("../img/hero-bg.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 657px;
+	&__body{
+		max-width: 1410px;
+		margin: 0 auto;
+		padding-top: 14px;
+	}
+	&__cyber{
+		position: relative;
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
 }

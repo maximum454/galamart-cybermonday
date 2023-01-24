@@ -1812,6 +1812,14 @@ body {
   display: none;
 }
 
+.cybermonday2023-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
 .cybermonday2023-header__body {
   max-width: 1086px;
   margin: 0 auto;
@@ -1851,73 +1859,28 @@ body {
   color: #2F45F4;
 }
 
-.newyear2023-content {
-  margin: 0 0 60px;
-  padding: 14px 0;
-  background: #6B0008;
-  -webkit-box-shadow: 0 4px 4px #520107;
-          box-shadow: 0 4px 4px #520107;
+.cybermonday2023-hero {
+  background-image: url("../img/hero-shadow.png"), url("../img/hero-bg.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 657px;
 }
 
-.newyear2023-content__body {
-  max-width: 1140px;
-  padding: 0 20px;
+.cybermonday2023-hero__body {
+  max-width: 1410px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
+  padding-top: 14px;
+}
+
+.cybermonday2023-hero__cyber {
   position: relative;
 }
 
-.newyear2023-content__title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 324px;
-          flex: 1 1 324px;
-  max-width: 324px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFF9AF;
-}
-
-.newyear2023-content__count {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  gap: 8px 13px;
-}
-
-.newyear2023-content__count .time {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 78px;
-  text-transform: uppercase;
-  color: #FEA143;
-}
-
-.newyear2023-content__count .text {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #FFF9AF;
-  vertical-align: middle;
+.cybermonday2023-hero__cyber img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .cybermonday2023-dif-arrow {
@@ -1932,8 +1895,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
   gap: 40px;
+  margin-top: -82px;
 }
 
 .cybermonday2023-dif-arrow__dif {
@@ -2200,27 +2164,6 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  .newyear2023-content__count {
-    gap: 8px 50px;
-  }
-
-  .newyear2023-content__count .time {
-    font-weight: 700;
-    font-size: 50px;
-    text-transform: uppercase;
-    color: #FEA143;
-    text-align: center;
-  }
-
-  .newyear2023-content__count .text {
-    display: block;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #FFF9AF;
-  }
-
   .cybermonday2023-selections__body {
     gap: 85px 40px;
   }
@@ -2296,46 +2239,6 @@ body {
 
   .cybermonday2023-header__currency {
     display: none;
-  }
-
-  .newyear2023-content {
-    margin: 0 0 54px;
-  }
-
-  .newyear2023-content__body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .newyear2023-content__title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-    text-align: center;
-  }
-
-  .newyear2023-content__count {
-    gap: 13px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-  }
-
-  .newyear2023-content__count .time {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .newyear2023-content__count .text {
-    font-size: 15px;
-    line-height: 18px;
   }
 
   .cybermonday2023-dif-arrow__dif {
