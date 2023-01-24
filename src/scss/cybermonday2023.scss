@@ -133,6 +133,9 @@ body{
 }
 
 @include r(767){
+	.wrp{
+		background-image: none;
+	}
 	.remodal-wrapper{
 		padding: 71px 0 0;
 	}

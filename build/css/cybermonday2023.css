@@ -2246,6 +2246,10 @@ body {
     display: none !important;
   }
 
+  .wrp {
+    background-image: none;
+  }
+
   .remodal-wrapper {
     padding: 71px 0 0;
   }
