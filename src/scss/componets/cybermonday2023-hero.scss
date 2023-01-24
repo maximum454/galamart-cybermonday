@@ -1,9 +1,8 @@
 .cybermonday2023-hero{
-	background-image:  url("../img/hero-shadow.png"), url("../img/hero-bg.png");
-	background-size: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-
+	background-image:  url("../img/hero-shadow.png"), url("../img/selections-bg.png");
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: repeat-y;
 	&__body{
 		max-width: 1410px;
 		margin: 0 auto;
@@ -13,10 +12,13 @@
 		position: relative;
 		img{
 			max-width: 100%;
+			width: 100%;
 			height: auto;
+			margin: 0 auto;
 		}
 	}
 	@include r(767){
+		background-size: auto;
 		&__body{
 			padding-top: 0;
 		}

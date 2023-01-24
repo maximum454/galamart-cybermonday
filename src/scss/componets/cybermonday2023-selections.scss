@@ -1,13 +1,11 @@
 .cybermonday2023-selections{
-	background-image: url("../img/selections-bg.png");
-	background-position: center;
-	background-size: auto;
-	background-repeat: no-repeat;
+	background-image: url("../img/selections-shadow.png") ,url("../img/selections-bg.png");
+	background-position: top center;
+	background-size: cover;
+	background-repeat: repeat-y;
+	padding-top: 38px;
 	padding-bottom: 69px;
 	position: relative;
-	-webkit-box-shadow: inset 0px 76px 156px 90px rgba(3,3,6,1);
-	-moz-box-shadow: inset 0px 76px 156px 90px rgba(3,3,6,1);
-	box-shadow: inset 0px 76px 156px 90px rgba(3,3,6,1);
 	&__header{
 		position: relative;
 		max-width: 1086px;
@@ -172,6 +170,7 @@
 		}
 	}
 	@include r(767){
+		padding-top: 17px;
 		background-position: center bottom;
 		background-size: cover;
 		-webkit-box-shadow: inset 0px 200px 156px 123px rgba(3,3,6,1);

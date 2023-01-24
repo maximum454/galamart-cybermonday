@@ -8,7 +8,9 @@
 * {
 	box-sizing: border-box;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 .header-search.only-mobile{
 	position: relative;
 	margin: 0 -15px;
@@ -32,7 +34,9 @@ body{
 	font-family: $font1;
 	overflow: hidden;
 	background-color: #000000;
-	background-repeat:repeat;
+	background-image: url("../img/cursor-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: auto;
 	padding-bottom: 0;
 }
@@ -153,6 +157,15 @@ body{
 	}
 }
 
+.bounce-1 {
+	animation-name: bounce-1;
+	animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(6px); }
+	100% { transform: translateY(0); }
+}
 
 
 @import "componets/cybermonday2023-header";
