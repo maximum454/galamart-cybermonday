@@ -228,7 +228,6 @@
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
-<script src="js/cybermonday2023.js"></script>
 
 
 <script>
@@ -238,14 +237,7 @@
                 $('.js-cursor').css({
                     'background-position': (e.pageX - 327) + 'px ' + (e.pageY - 327) + 'px'
                 });
-            }).on('gotopage', function (e, page) {
-                var block = $('#go-' + page);
-                if (block.length) {
-                    $('html, body').animate({
-                        scrollTop: block.offset().top
-                    }, 500);
-                }
-            });
+            })
         }
     })
 </script>
