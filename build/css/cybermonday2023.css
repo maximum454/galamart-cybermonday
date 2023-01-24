@@ -1864,7 +1864,6 @@ body {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  height: 657px;
 }
 
 .cybermonday2023-hero__body {
@@ -1897,7 +1896,7 @@ body {
           justify-content: space-between;
   margin-bottom: 38px;
   gap: 40px;
-  margin-top: -82px;
+  margin-top: -13px;
 }
 
 .cybermonday2023-dif-arrow__dif {
@@ -1956,6 +1955,7 @@ body {
   background-image: url("../img/selections-shadow.png"), url("../img/selections-bg.png");
   background-position: center;
   background-size: auto;
+  background-repeat: no-repeat;
   padding-bottom: 69px;
 }
 
