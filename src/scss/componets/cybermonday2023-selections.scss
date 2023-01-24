@@ -1,7 +1,7 @@
 .cybermonday2023-selections{
-	background-image: url("../img/selections-bg.png");
+	background-image: url("../img/selections-shadow.png") ,url("../img/selections-bg.png");
 	background-position: center;
-	background-size: 100%;
+	background-size: auto;
 	padding-bottom: 69px;
 	&__header{
 		max-width: 1086px;

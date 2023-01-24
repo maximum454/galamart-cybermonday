@@ -1861,7 +1861,7 @@ body {
 
 .cybermonday2023-hero {
   background-image: url("../img/hero-shadow.png"), url("../img/hero-bg.png");
-  background-size: 100%;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   height: 657px;
@@ -1953,9 +1953,9 @@ body {
 }
 
 .cybermonday2023-selections {
-  background-image: url("../img/selections-bg.png");
+  background-image: url("../img/selections-shadow.png"), url("../img/selections-bg.png");
   background-position: center;
-  background-size: 100%;
+  background-size: auto;
   padding-bottom: 69px;
 }
 
